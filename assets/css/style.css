@@ -1,0 +1,411 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+	max-width:1170;
+	margin:0 auto;
+	padding-left:12px;
+	padding-right:12px;
+}
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:-12px;
+	margin-right:-12px;
+}
+.py-12{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.py{
+	padding: 120px 30px;
+}
+.px{
+	padding: 0 30px;
+}
+.d-flex{
+	display:flex;
+	flex-wrap:wrap;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-end{
+	justify-content: flex-end;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+span{
+	display: block;
+}
+.w-1{
+	width:8.33%;
+}
+.w-2{
+	width:16.66%;
+}
+.w-3{
+	width:25%;
+}
+.w-4{
+	width:33.33%;
+}
+.w-5{
+	width:41.66%;
+}
+.w-6{
+	width:50%;
+}
+.w-7{
+	width:58.33%;
+}
+.w-8{
+	width:66.66%;
+}
+.w-9{
+	width:75%;
+}
+.w-10{
+	width:83.33%;
+}
+.w-11{
+	width:91.66%;
+}
+.w-12{
+	width:100%;
+}
+.w-1,.w-2,.w-3,.w-4,.w-5,.w-6,.w-7,.w-8,.w-9,.w-10,.w-11,.w-12{
+	padding-left:12px;
+	padding-right:12px;
+}
+:root{
+	--primary-color:#ff8700;
+	--secondary-color:#011920;
+	--white-color:#fff;
+	--gray-color:#333333;
+	--black-color:#000;
+	--fs-14:14px;
+	--fs-16:16px;
+	--fs-18:18px;
+	--fs-20:20px;
+	--fs-24:24px;
+	--fs-23:23px;
+	--fs-30:30px;
+	--fs-48:48px;
+	--fs-70:70px;
+	--fw-100:100;
+	--fw-200:200;
+	--fw-300:300;
+	--fw-400:400;
+	--fw-500:500;
+	--fw-600:600;
+	--fw-700:700;
+	--fw-800:800;
+	--fw-900:900;
+	--font:'Just Another Hand';
+}
+body{
+	font-family: 'THICCCBOI';
+	font-size: var(--fs-14);
+	color: white;
+	background-color: black;
+}
+/* header start */
+header{
+	padding: 33px 30px 0 30px;
+}
+header .menu ul li a{
+	color: var(--white-color);
+	margin: 0 50px 0 0;
+	font-size: var(--fs-18);
+	text-transform: capitalize;
+}
+header .menu ul li a i{
+	transition: 0.5s;
+}
+header .menu ul li a:hover{
+	color: var(--primary-color);
+}
+header .menu ul li a:hover i{
+	transform: rotate(180deg);
+}
+header .menu ul li .dropdown{
+	position: absolute;
+	background-color: var(--white-color);  
+	visibility: hidden;
+	opacity: 0;
+	padding: 20px 25px; 
+	top: 11%;
+}
+header .menu ul li .dropdown ul li a{
+	color: var(--black-color);
+	margin: 0;
+}
+header .menu ul li .dropdown ul li{
+	padding: 10px 0;
+	position: relative;
+	margin: 0;
+}
+header .menu ul li .dropdown ul li a:hover{
+	color: var(--primary-color);
+}
+header .menu ul li:hover .dropdown{
+	visibility: visible;
+	opacity: 1;
+}
+/* header end */
+/* banner start */
+.banner{
+	background-image: url('../Images/63fc8f011df7042b653ee41c_hero-image-1-1.jpg');
+	background-size: cover; background-position: center;
+	margin-top: 30px;
+}
+.banner .banner-content span,.breckhead span{
+	font-size: var(--fs-30);
+	margin: 0 0 30px;
+	color: var(--primary-color);
+	font-family: 'Just Another Hand';
+	letter-spacing: 7px;
+}
+.banner .banner-content h1{
+	margin: 0 0 45px;
+	font-size: var(--fs-70);
+}
+.banner .banner-content p{
+	margin: 0 0 60px;
+	font-size: var(--fs-20);
+}
+.banner .banner-content p span{
+	font-size: var(--fs-20);
+	color: var(--primary-color);
+	text-decoration: underline;
+	font-family: 'THICCCBOI';
+	letter-spacing: 2px;
+	display: inline;
+}
+.banner .banner-content button,.fresh .fresh-content button{
+	padding: 15px 39px 15px 38px;
+	font-size: var(--fs-18);
+	border: 1px solid var(--white-color);
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+ .banner-content button:hover, .fresh-content button:hover{
+	background-color: var(--primary-color);
+	border: 0;
+}
+/* banner end */
+/* fresh start */
+.fresh .fresh-content span,.breckhead span{
+	margin: 0 0 20px;
+	font-size: var(--fs-20);
+	font-family: 'Just Another Hand';
+	letter-spacing: 7px;
+	color: var(--primary-color);
+}
+.fresh .fresh-content h2,.new-content h2,.breckhead h2{
+	margin: 0 0 35px;
+	font-size: var(--fs-48);
+}
+.fresh .fresh-content p{
+	margin: 0 0 25px;
+	font-size: var(--fs-18);
+	line-height: 1.7;
+}
+.fresh .fresh-content h6{
+	margin: 0 0 45px;
+	font-size: var(--fs-20);
+	font-weight: var(--fw-600);
+}
+.fresh .fresh-content h6 span{
+	display: inline;
+	font-family: 'THICCCBOI';
+	letter-spacing: 2px;
+}
+/* fresh end */
+
+/* breck start */
+.breckhead button{
+	padding: 13px 30px; background-color: transparent;
+	color: var(--white-color);
+	border: 1px solid var(--white-color);
+	font-size: var(--fs-16);
+	 margin-right: 15px; cursor: pointer;
+}
+.breckhead .b{
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+}
+.men{
+	margin-top: 50px;
+}
+.men h4{
+	font-size:18px;
+}
+.men h3{
+	margin: 0 25px;
+	color: #d6d6d6;
+}
+.men span{
+	font-size: var(--fs-18);
+	font-weight: 600;
+}
+.men p{
+	font-size: 17px;
+	margin-top: 10px;
+	color: #d6d6d6;
+}.men .a{
+	background-color: var(--primary-color);
+	 padding: 4px 8px;
+	font-size: 15px;
+	margin-left: 8px
+}
+/* breck end */
+
+/* image start */
+.image{
+	padding: 0 30px; cursor: pointer;
+}
+.image img{
+	transition: 0.5s;
+}
+.image img:hover{
+	transform: translateY(-4%);
+}
+/* image end */
+
+/* new start */
+.new-content span{
+	margin: 0 0 10px;
+	text-align: center;
+	font-size: var(--fs-20);
+	font-family: 'Just Another Hand';
+	letter-spacing: 7px;
+	color: var(--primary-color);
+}
+.new-content p{
+	margin: 0 0 40px;
+	font-size: var(--fs-18);
+	font-weight: var(--fw-500);
+	text-align: center;
+}
+.new-conten .form form{
+	position: relative;
+}
+.new-content .form form input{
+	margin: 0 0 30px 0px;
+	padding: 19px 250px 19px 30px;
+	border: 0; color: white;
+	font-size: var(--fs-16);
+	letter-spacing: 1px;
+	border: 1px solid var(--white-color);
+	background-color: transparent;
+	height: 60px;
+}
+.new-content .form form button{
+	padding: 9px 17px;
+	margin: 4px 4px 0 0;
+	background-color: var(--white-color);
+	color: var(--black-color);
+	font-size: var(--fs-16);
+	position:absolute; border: 0;
+	height: 52px;
+	transition: 0.3s;
+	right: 6.3%;
+}
+.new-content .form form button:hover{
+	color: var(--white-color);
+	background-color: var(--primary-color);
+}
+.new-content h6 span{
+	display: inline;
+	font-family: 'THICCCBOI';
+	letter-spacing: 2px;
+}
+.new-content h6{
+	margin: 0 0 45px;
+	font-size: var(--fs-20);
+	font-weight: var(--fw-600);
+	text-align: center;
+}
+/* new end */
+/* footer start */
+footer .first img{
+	padding: 0 0 35px;
+}
+footer .first p{
+	margin: 0 0 25px;
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: var(--fw-500);
+}
+footer .first .icon ul li a{
+	color: var(--white-color);
+	padding: 0 0 50px;
+	margin: 0 15px 0 0;
+}
+footer .first .icon ul li a i{
+	width: 27px; height: 27px; 
+	border: 1px solid white;
+	display: flex; border-radius: 50%;
+	justify-content: center; 
+	transition: 0.3s;
+	align-items: center;
+	margin: 0 15px 10px 0;
+}
+footer .first .icon ul li a i:hover{
+	background-color: white;
+	color: var(--primary-color);
+} 
+footer .second h2{
+	margin-bottom: 25px;
+} 
+footer .second ul li a{
+	color: var(--white-color);  
+	transition: 0.3s; font-size: 15px;
+	line-height: 3;
+}
+footer .second .c:hover,footer .second span a:hover{
+	color: var(--primary-color);
+}
+footer .second ul li a:hover{
+	color: var(--primary-color);
+	padding-left: 5px;
+}
+footer .second p{
+	line-height: 1.6; margin-bottom: 20px;
+}
+footer .second span a{
+	color: var(--white-color);  
+	line-height: 2; transition: 0.3s;
+} 
+footer .second .c{
+	margin: 20px 0 0; 
+	font-size: 15px; cursor: pointer;
+	font-weight: 550; transition: 0.3s;
+}
+.div span{
+	color: var(--primary-color); margin: 0 5px;
+}.div{
+	font-size: 15px; 
+	font-weight: 550;
+	letter-spacing: 1px;
+	 padding-bottom:25px;
+}
+/* footer end */
